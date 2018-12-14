@@ -26,7 +26,8 @@ class ViewController: UIViewController {
         }
         return str
     }
-    @IBOutlet weak var display: UITextField!
+    @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var display1: UILabel!
     @IBAction func buttonZeon(_ sender: Any) {
         if(display.text == "0" )
         {
@@ -259,15 +260,14 @@ class ViewController: UIViewController {
 }
 @IBAction func bottonDian(_ sender: Any) {
     display.text = display.text! + "."
-    display.text = display.text! + ""
     
 }
 @IBAction func buttonAdd(_ sender: Any) {
     operatorFlag=1
     temp = Double (display.text!)!
-    display.text = "+"
-    
+         display.text = "+"
 }
+    
     @IBAction func buttonSlow(_ sender: Any){
     operatorFlag=2
     temp = Double(display.text!)!
@@ -284,36 +284,42 @@ class ViewController: UIViewController {
     operatorFlag=4
     temp = Double (display.text!)!
     display.text = "*"
-    
 }
     @IBAction func buttonResult(_ sender: Any) {
     if   operatorFlag == 1  {
         temp = temp + Double(display.text!)!
-        display.text = "\(temp)"
         value = temp
+        if (display.text != "" && operatorFlag == 1){
+            display1.text = "\(value)"
+        }
+        display.text = "\(temp)"
         
     }
     if   operatorFlag == 2  {
         temp = temp - Double(display.text!)!
+         value = temp
         display.text = "\(temp)"
-        value = temp
+        display1.text = "\(value)"
         
     }
     if  operatorFlag == 3 {
         temp = temp / Double(display.text!)!
+         value = temp
         display.text = "\(temp)"
-        value = temp
+        display1.text = "\(value)"
         
     }
     if   operatorFlag == 4{
         temp = temp * Double(display.text!)!
+         value = temp
         display.text = "\(temp)"
-        value = temp
+        display1.text = "\(value)"
         
     }
 }
 @IBAction func buttonReset(_ sender: Any) {
     display.text = "0"
+    display1.text = ""
 }
 
 
@@ -324,7 +330,7 @@ class ViewController: UIViewController {
         displaytext = ""
     }
     if(display.text != "0"){
-        display.text!.remove(at: display.text!.index(before:display.text!.endIndex))
+        display.text!.remove(at:display.text!.index(before:display.text!.endIndex))
         displaytext = display.text!
     }
 }

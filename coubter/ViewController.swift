@@ -52,212 +52,212 @@ class ViewController: UIViewController {
         display.text = display.text! + "0"
     }
     @IBAction func buttonOne(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "1"
     }
-    if(display.text == "+" )
-    {
-    display.text = ""
+    @IBAction func buttonTwo(_ sender: Any) {
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "2"
     }
-    if(display.text == "-" )
-    {
-    display.text = ""
+    @IBAction func buttonThree(_ sender: Any) {
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "3"
     }
-    if(display.text == "*" )
-    {
-    display.text = ""
+    @IBAction func buttonFour(_ sender: Any) {
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "4"
     }
-    if(display.text == "/" )
-    {
-    display.text = ""
+    @IBAction func buttonFive(_ sender: Any) {
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "5"
     }
-    display.text = display.text! + "1"
-}
-@IBAction func buttonTwo(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
+    @IBAction func buttonSix(_ sender: Any) {
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "6"
     }
-    if(display.text == "+" )
-    {
-        display.text = ""
+    @IBAction func buttonSeven(_ sender: Any) {
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "7"
     }
-    if(display.text == "-" )
-    {
-        display.text = ""
+    @IBAction func buttonEight(_ sender: Any) {
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "8"
     }
-    if(display.text == "*" )
-    {
-        display.text = ""
+    @IBAction func buttonNine(_ sender: Any) {
+        if(display.text == "0" )
+        {
+            display.text = ""
+        }
+        if(display.text == "+" )
+        {
+            display.text = ""
+        }
+        if(display.text == "-" )
+        {
+            display.text = ""
+        }
+        if(display.text == "*" )
+        {
+            display.text = ""
+        }
+        if(display.text == "/" )
+        {
+            display.text = ""
+        }
+        display.text = display.text! + "9"
     }
-    if(display.text == "/" )
-    {
-        display.text = ""
-    }
-    display.text = display.text! + "2"
-}
-@IBAction func buttonThree(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
-    }
-    if(display.text == "+" )
-    {
-        display.text = ""
-    }
-    if(display.text == "-" )
-    {
-        display.text = ""
-    }
-    if(display.text == "*" )
-    {
-        display.text = ""
-    }
-    if(display.text == "/" )
-    {
-        display.text = ""
-    }
-    display.text = display.text! + "3"
-}
-@IBAction func buttonFour(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
-    }
-    if(display.text == "+" )
-    {
-        display.text = ""
-    }
-    if(display.text == "-" )
-    {
-        display.text = ""
-    }
-    if(display.text == "*" )
-    {
-        display.text = ""
-    }
-    if(display.text == "/" )
-    {
-        display.text = ""
-    }
-    display.text = display.text! + "4"
-}
-@IBAction func buttonFive(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
-    }
-    if(display.text == "+" )
-    {
-        display.text = ""
-    }
-    if(display.text == "-" )
-    {
-        display.text = ""
-    }
-    if(display.text == "*" )
-    {
-        display.text = ""
-    }
-    if(display.text == "/" )
-    {
-        display.text = ""
-    }
-    display.text = display.text! + "5"
-}
-@IBAction func buttonSix(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
-    }
-    if(display.text == "+" )
-    {
-        display.text = ""
-    }
-    if(display.text == "-" )
-    {
-        display.text = ""
-    }
-    if(display.text == "*" )
-    {
-        display.text = ""
-    }
-    if(display.text == "/" )
-    {
-        display.text = ""
-    }
-    display.text = display.text! + "6"
-}
-@IBAction func buttonSeven(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
-    }
-    if(display.text == "+" )
-    {
-        display.text = ""
-    }
-    if(display.text == "-" )
-    {
-        display.text = ""
-    }
-    if(display.text == "*" )
-    {
-        display.text = ""
-    }
-    if(display.text == "/" )
-    {
-        display.text = ""
-    }
-    display.text = display.text! + "7"
-}
-@IBAction func buttonEight(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
-    }
-    if(display.text == "+" )
-    {
-        display.text = ""
-    }
-    if(display.text == "-" )
-    {
-        display.text = ""
-    }
-    if(display.text == "*" )
-    {
-        display.text = ""
-    }
-    if(display.text == "/" )
-    {
-        display.text = ""
-    }
-    display.text = display.text! + "8"
-}
-@IBAction func buttonNine(_ sender: Any) {
-    if(display.text == "0" )
-    {
-        display.text = ""
-    }
-    if(display.text == "+" )
-    {
-        display.text = ""
-    }
-    if(display.text == "-" )
-    {
-        display.text = ""
-    }
-    if(display.text == "*" )
-    {
-        display.text = ""
-    }
-    if(display.text == "/" )
-    {
-        display.text = ""
-    }
-    display.text = display.text! + "9"
-}
 @IBAction func bottonDian(_ sender: Any) {
     display.text = display.text! + "."
     
@@ -286,13 +286,19 @@ class ViewController: UIViewController {
     display.text = "*"
 }
     @IBAction func buttonResult(_ sender: Any) {
+        if display.text == "+" || display.text == "-"
+        {
+            display.text = "0"
+        }
+        if display.text == "*" || display.text == "/"
+        {
+            display.text = "1"
+        }
     if   operatorFlag == 1  {
         temp = temp + Double(display.text!)!
         value = temp
-        if (display.text != "" && operatorFlag == 1){
-            display1.text = "\(value)"
-        }
         display.text = "\(temp)"
+        display1.text = "\(value)"
         
     }
     if   operatorFlag == 2  {
@@ -319,7 +325,8 @@ class ViewController: UIViewController {
 }
 @IBAction func buttonReset(_ sender: Any) {
     display.text = "0"
-    display1.text = ""
+      display1.text = "0"
+    operatorFlag = 0
 }
 
 

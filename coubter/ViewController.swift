@@ -10,10 +10,10 @@ import UIKit
 class ViewController: UIViewController {
     var operatorFlag: Double = 0
     var temp: Double = 0
-    var temp1: Double = 0
+    var voc: Bool = true
     var value: Double = 0
     var displaytext: String = ""
-    func RemoveZero(testNumber:Double)->String{
+    /*func RemoveZero(testNumber:Double)->String{
         var str = "\(testNumber)"
         var str2 = str.components(separatedBy: ".")
         if(str2[1]=="")
@@ -25,9 +25,8 @@ class ViewController: UIViewController {
             str = str2[0]
         }
         return str
-    }
+    }*/
     @IBOutlet weak var display: UILabel!
-    @IBOutlet weak var display1: UILabel!
     @IBAction func buttonZeon(_ sender: Any) {
         if(display.text == "0" )
         {
@@ -259,31 +258,76 @@ class ViewController: UIViewController {
         display.text = display.text! + "9"
     }
 @IBAction func bottonDian(_ sender: Any) {
-    display.text = display.text! + "."
+    if(voc == true)
+    {
+        display.text = display.text! + "."
+    }
+    voc = false
+
     
 }
 @IBAction func buttonAdd(_ sender: Any) {
-    operatorFlag=1
+    voc = true
+     if display.text == "+" || display.text == "-" || display.text == "/" || display.text == "*"
+     {
+        display.text = "0"
+    }
     temp = Double (display.text!)!
-         display.text = "+"
+    display.text = "+"
+    value = value + temp
+    operatorFlag=1
 }
-    
-    @IBAction func buttonSlow(_ sender: Any){
-    operatorFlag=2
+@IBAction func buttonSlow(_ sender: Any){
+        voc = true
+    if display.text == "+" || display.text == "-" || display.text == "/" || display.text == "*"
+        {
+            display.text = "0"
+        }
     temp = Double(display.text!)!
+    if(operatorFlag == 0)
+    {
+        value = temp
+    }
     display.text = "-"
-    
+    if(operatorFlag == 2)
+    {
+        value = value - temp
+    }
+    operatorFlag = 2
 }
 @IBAction func buttonChu(_ sender: Any) {
-    operatorFlag=3
+    voc = true
+    if display.text == "+" || display.text == "-" || display.text == "/" || display.text == "*"
+    {
+        display.text = "0"
+    }
     temp = Double(display.text!)!
+    if(operatorFlag == 0)
+    {
+        value = temp
+    }
     display.text = "/"
+    if(operatorFlag == 3)
+    {
+        value = value / temp
+    }
+    operatorFlag = 3
     
 }
 @IBAction func buttonProduct(_ sender: Any) {
-    operatorFlag=4
+    voc = true
+    if display.text == "+" || display.text == "-" || display.text == "/" || display.text == "*"
+    {
+        display.text = "0"
+    }
     temp = Double (display.text!)!
+    if(operatorFlag == 0)
+    {
+        value = 1
+    }
     display.text = "*"
+    value = value * temp
+    operatorFlag=4
 }
     @IBAction func buttonResult(_ sender: Any) {
         if display.text == "+" || display.text == "-"
@@ -295,38 +339,32 @@ class ViewController: UIViewController {
             display.text = "1"
         }
     if   operatorFlag == 1  {
-        temp = temp + Double(display.text!)!
-        value = temp
+        temp = value + Double(display.text!)!
+        
         display.text = "\(temp)"
-        display1.text = "\(value)"
         
     }
     if   operatorFlag == 2  {
-        temp = temp - Double(display.text!)!
-         value = temp
+        temp = value - Double(display.text!)!
         display.text = "\(temp)"
-        display1.text = "\(value)"
         
     }
     if  operatorFlag == 3 {
-        temp = temp / Double(display.text!)!
-         value = temp
+        temp = value / Double(display.text!)!
         display.text = "\(temp)"
-        display1.text = "\(value)"
         
     }
     if   operatorFlag == 4{
-        temp = temp * Double(display.text!)!
-         value = temp
+        temp = value * Double(display.text!)!
         display.text = "\(temp)"
-        display1.text = "\(value)"
         
     }
 }
 @IBAction func buttonReset(_ sender: Any) {
     display.text = "0"
-      display1.text = "0"
+    value = 0
     operatorFlag = 0
+    voc = true
 }
 
 

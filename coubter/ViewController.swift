@@ -13,21 +13,10 @@ class ViewController: UIViewController {
     var voc: Bool = true
     var value: Double = 0
     var displaytext: String = ""
-    /*func RemoveZero(testNumber:Double)->String{
-        var str = "\(testNumber)"
-        var str2 = str.components(separatedBy: ".")
-        if(str2[1]=="")
-        {
-            str2[1] = "0"
-        }
-        if(Int(str2[1]) == 0)
-        {
-            str = str2[0]
-        }
-        return str
-    }*/
     @IBOutlet weak var display: UILabel!
     @IBAction func buttonZeon(_ sender: Any) {
+        if display.text != "/"
+        {
         if(display.text == "0" )
         {
             display.text = ""
@@ -49,7 +38,8 @@ class ViewController: UIViewController {
             display.text = ""
         }
         display.text = display.text! + "0"
-    }
+        }
+        }
     @IBAction func buttonOne(_ sender: Any) {
         if(display.text == "0" )
         {

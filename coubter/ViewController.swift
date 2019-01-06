@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     var operatorFlag: Double = 0
     var temp: Double = 0
-    var voc: Bool = true
+    var determine: Bool = true
     var value: Double = 0
     var displaytext: String = ""
     @IBOutlet weak var display: UILabel!
@@ -248,16 +248,16 @@ class ViewController: UIViewController {
         display.text = display.text! + "9"
     }
 @IBAction func bottonDian(_ sender: Any) {
-    if(voc == true)
+    if(determine == true)
     {
         display.text = display.text! + "."
     }
-    voc = false
+    determine = false
 
     
 }
 @IBAction func buttonAdd(_ sender: Any) {
-    voc = true
+    determine = true
      if display.text == "+" || display.text == "-" || display.text == "/" || display.text == "*"
      {
         display.text = "0"
@@ -268,7 +268,7 @@ class ViewController: UIViewController {
     operatorFlag=1
 }
 @IBAction func buttonSlow(_ sender: Any){
-        voc = true
+        determine = true
     if display.text == "+" || display.text == "-" || display.text == "/" || display.text == "*"
         {
             display.text = "0"
@@ -286,7 +286,7 @@ class ViewController: UIViewController {
     operatorFlag = 2
 }
 @IBAction func buttonChu(_ sender: Any) {
-    voc = true
+    determine = true
     if display.text == "+" || display.text == "-" || display.text == "/" || display.text == "*"
     {
         display.text = "0"
@@ -305,7 +305,7 @@ class ViewController: UIViewController {
     
 }
 @IBAction func buttonProduct(_ sender: Any) {
-    voc = true
+    determine = true
     if display.text == "+" || display.text == "-" || display.text == "/" || display.text == "*"
     {
         display.text = "0"
@@ -354,7 +354,7 @@ class ViewController: UIViewController {
     display.text = "0"
     value = 0
     operatorFlag = 0
-    voc = true
+    determine = true
 }
 
 
